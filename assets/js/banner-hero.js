@@ -3,16 +3,14 @@ document.addEventListener('DOMContentLoaded', () => {
         "COMMUNITY EVENTS",
         "EXPERT INSTRUCTORS",
         "BEGINNER-FRIENDLY ENVIRONMENT",
-        "INNOVATIVE TRAINING FACILITIES",
-        ""
+        "INNOVATIVE TRAINING FACILITIES"
     ];
 
     const translations = {
         "COMMUNITY EVENTS": { en: "COMMUNITY EVENTS", es: "EVENTOS COMUNITARIOS" },
         "EXPERT INSTRUCTORS": { en: "EXPERT INSTRUCTORS", es: "INSTRUCTORES EXPERTOS" },
         "BEGINNER-FRIENDLY ENVIRONMENT": { en: "BEGINNER-FRIENDLY ENVIRONMENT", es: "AMBIENTE AMIGABLE PARA PRINCIPIANTES" },
-        "INNOVATIVE TRAINING FACILITIES": { en: "INNOVATIVE TRAINING FACILITIES", es: "INSTALACIONES DE ENTRENAMIENTO INNOVADORAS" },
-        "": {en: "", es: ""}
+        "INNOVATIVE TRAINING FACILITIES": { en: "INNOVATIVE TRAINING FACILITIES", es: "INSTALACIONES DE ENTRENAMIENTO INNOVADORAS" }
     };
 
     const container = document.getElementById('bannerContainer');
@@ -85,12 +83,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize language based on localStorage or default
     let currentLanguage = localStorage.getItem('language') || 'es';
     currentLanguage = currentLanguage === 'es' ? 'es' : 'en'; // Ensure valid language
-
+  
     createContent(currentLanguage); // Initialize the banner
 
     // Start the animation
     calculateWidth();
     animate();
+     translateX = 0; // Reset translateX for smooth transition
+        animationFrameId = requestAnimationFrame(animate);
 
     // Pausar/resumir al interactuar con el banner
     container.addEventListener('mouseenter', () => paused = true);

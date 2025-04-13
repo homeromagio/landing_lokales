@@ -1,24 +1,8 @@
 :root {
     --start-x: 100px;
     --start-y: 100px;
-
-    --primary-color: #CF5035;
-    --bg-light: white;
-    --bg-dark: black;
-
   }
-
-  html[data-theme="light"] {
-    background: var(--bg-light);
-    color: black;
-}
-
-html[data-theme="dark"] {
-    background: var(--bg-dark);
-    color: white;
-}
-
-
+  
 
 * {
     margin: 0;
@@ -34,7 +18,7 @@ html[data-theme="dark"] {
          url('../fonts/Tanker-Regular.woff') format('woff'); /* Formato compatible */
     font-weight: normal;
     font-style: normal;
-    font-display: swap; /* Mejora la renderización mientras se carga la fuente */
+    font-display: swap; /* Mejora la renderizaciÃ³n mientras se carga la fuente */
 }
 
 /* Cargar la fuente Inter */
@@ -52,7 +36,6 @@ html[data-theme="dark"] {
 html, body {
   overflow-x: hidden !important;
   max-width: 100%;
-  
 }
 
 
@@ -182,7 +165,7 @@ p {
     margin-right: 0;
 }
 
-/* Imágenes a la derecha */
+/* ImÃ¡genes a la derecha */
 .hero-images {
     display: flex;
     flex-direction: column;
@@ -231,10 +214,10 @@ p {
     fill: rgba(205, 174, 255, 0.712); /* Cambia el color al pasar el mouse */
 }
 
-@media (max-width: 768px) { /* Ajusta el tamaño según necesites */
+@media (max-width: 768px) { /* Ajusta el tamaÃ±o segÃºn necesites */
     .a_patinate_roja svg,
     .a_patinate_violeta svg {
-        width: 100%; /* O el tamaño que prefieras */
+        width: 100%; /* O el tamaÃ±o que prefieras */
         height: auto;
     }
 }
@@ -249,13 +232,13 @@ p {
 }
 
   
-  /* Oculta el elemento en pantallas pequeñas (sm) y mayores, solo se muestra en pantallas extra pequeñas (xs) */
+  /* Oculta el elemento en pantallas pequeÃ±as (sm) y mayores, solo se muestra en pantallas extra pequeÃ±as (xs) */
   .d-sm-none {
     display: none !important;
   }
   
   @media (min-width: 576px) {
-    /* Muestra el elemento como bloque en pantallas pequeñas (sm) y mayores */
+    /* Muestra el elemento como bloque en pantallas pequeÃ±as (sm) y mayores */
     .d-sm-block {
       display: block !important;
     }
@@ -322,7 +305,7 @@ p {
     filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4)) contrast(1.3);
     z-index: 10;
     border-radius: 10px;
-    font-family: 'Brush Script', cursive; /* Estilo de fuente tipo grafiti (asegurate de que la fuente esté disponible) */
+    font-family: 'Brush Script', cursive; /* Estilo de fuente tipo grafiti (asegurate de que la fuente estÃ© disponible) */
     z-index: -1;
   }
 
@@ -376,7 +359,7 @@ padding-bottom: 13px;
     
 
     .navbar, .hero, .container {
-        padding: 10px 0; /* Menos padding para pantallas pequeñas */
+        padding: 10px 0; /* Menos padding para pantallas pequeÃ±as */
     }
 
     .navbar-logo {
@@ -411,7 +394,7 @@ padding-bottom: 13px;
 /* Ajustes para pantallas menores a 500px */
 @media (max-width: 500px) {
     .navbar, .hero {
-        padding: 10px 5px; /* Padding mínimo para móviles */
+        padding: 10px 5px; /* Padding mÃ­nimo para mÃ³viles */
     }
 
     .hero-text h1 {
@@ -423,16 +406,16 @@ padding-bottom: 13px;
     }
 
     .hero-text p {
-        font-size: 0.9rem; /* Reducir el tamaño del texto */
+        font-size: 0.9rem; /* Reducir el tamaÃ±o del texto */
     }
 
     .hero-buttons .btn {
-        padding: 0.6rem 1rem; /* Reducir el tamaño de los botones */
+        padding: 0.6rem 1rem; /* Reducir el tamaÃ±o de los botones */
         font-size: 0.9rem;
     }
 
     .hero-images img {
-        width: 150px; /* Reducir el tamaño de las imágenes */
+        width: 150px; /* Reducir el tamaÃ±o de las imÃ¡genes */
     }
 }
 
@@ -442,7 +425,7 @@ padding-bottom: 13px;
     display: flex;
     position: relative;
     gap: 10px;  /* Espaciado entre elementos */
-    flex-wrap: wrap;  /* Permite que los elementos se acomoden en varias líneas si no caben */
+    flex-wrap: wrap;  /* Permite que los elementos se acomoden en varias lÃ­neas si no caben */
     width: 100%;
 }
 
@@ -459,6 +442,7 @@ padding-bottom: 13px;
     margin-top: 34px;
     margin-bottom: 34px;
 }
+
 
 
 
@@ -533,6 +517,7 @@ padding-bottom: 13px;
 
 
 
+
 /* ----------------------- BENEFICIOS  ----------------------- */
 
 
@@ -566,7 +551,7 @@ padding-bottom: 13px;
 /* Contenido encima del blur */
 .beneficios-contenido {
     position: relative; 
-    z-index: 1; /* Asegura que el texto esté por encima del fondo */
+    z-index: 1; /* Asegura que el texto estÃ© por encima del fondo */
 }
 
 
@@ -584,7 +569,7 @@ padding-bottom: 13px;
 
 .h3-title{
     background: transparent;
-    color: var(--primary-color);
+    color: #CF5035;
     text-decoration: none;
     display: inline-block;
     font-size: 86px;
@@ -598,15 +583,9 @@ padding-bottom: 13px;
             drop-shadow(0 6px 0 white)
             drop-shadow(-6px 0 0 white) 
             drop-shadow(0 -6px 0 white);
+
 }
 
-
-@media (prefers-color-scheme: dark) {
-    .h3-title{
-        color: var(--primary-color) !important;
-    }
-}
-  
 
 .contenedor-beneficio-title{
     min-width: 558px;
@@ -753,11 +732,11 @@ padding-bottom: 13px;
     .contenedor-beneficio-title{
         min-width: 100%;
         width: 100%;
-        order: 1; /* Asegura que el título vaya primero */
+        order: 1; /* Asegura que el tÃ­tulo vaya primero */
     }
                 
     .contenedor-beneficio-p{
-        order: 2; /* Mueve el párrafo debajo del título */
+        order: 2; /* Mueve el pÃ¡rrafo debajo del tÃ­tulo */
     }
 
     
@@ -807,6 +786,7 @@ padding-bottom: 13px;
 }
 
 /* ----------------------- END BENEFICIOS   ----------------------- */
+
 
 
 
@@ -1238,6 +1218,7 @@ padding-bottom: 13px;
 
 
 
+
 /* ----------------------- PRICING  ----------------------- */
 
 .contenedor-pricing{
@@ -1319,7 +1300,7 @@ padding-bottom: 13px;
       white 270deg 360deg
     );
     background-size: 112.8px 112.8px; /* Cada tile es de 112.8px, resultando en cuadrados de 56.4px */
-    z-index: -1; /* Envía el fondo detrás del contenido */
+    z-index: -1; /* EnvÃ­a el fondo detrÃ¡s del contenido */
     border-radius: 24px;
   }
 
@@ -1351,7 +1332,7 @@ padding-bottom: 13px;
     border: 1px solid #ddd;
     flex: 1 1 300px; /* Toma al menos 300px de ancho y se adapta */
     display: flex;
-    flex-direction: column; /* Para poder usar margin-top: auto en el botón */
+    flex-direction: column; /* Para poder usar margin-top: auto en el botÃ³n */
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     color: black;
@@ -1359,7 +1340,7 @@ padding-bottom: 13px;
 }
 
 
-/* Título y subtítulo */
+/* TÃ­tulo y subtÃ­tulo */
 .pricing-card h2 {
     margin-bottom: 10px;
     font-size: 2.5em;
@@ -1411,7 +1392,7 @@ padding-bottom: 13px;
         width: 72px;
         height: 86px;
         font-size: 66px;
-        margin-left: -26px; /* Ajusta el margen para pantallas más pequeñas */
+        margin-left: -26px; /* Ajusta el margen para pantallas mÃ¡s pequeÃ±as */
         border: 6px solid white;
     }
 }
@@ -1442,7 +1423,7 @@ padding-bottom: 13px;
         width: 66px;
         height: 86px;
         font-size: 66px;
-        margin-left: -26px; /* Ajusta el margen para pantallas más pequeñas */
+        margin-left: -26px; /* Ajusta el margen para pantallas mÃ¡s pequeÃ±as */
         border: 6px solid white;
     }
 
@@ -1470,7 +1451,7 @@ padding-bottom: 13px;
         width: 46px;
         height: 60px;
         font-size: 56px;
-        margin-left: -26px; /* Ajusta el margen para pantallas aún más pequeñas */
+        margin-left: -26px; /* Ajusta el margen para pantallas aÃºn mÃ¡s pequeÃ±as */
         border: 3px solid white;
     }
 
@@ -1537,7 +1518,7 @@ padding-bottom: 13px;
     position: relative;
     flex: 1 1 300px; /* Toma al menos 300px de ancho y se adapta */
     display: flex;
-    flex-direction: column; /* Para poder usar margin-top: auto en el botón */
+    flex-direction: column; /* Para poder usar margin-top: auto en el botÃ³n */
     padding: 20px;
 }
 
@@ -1659,7 +1640,7 @@ padding-bottom: 13px;
     filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4)) contrast(1.3);
     z-index: 10;
     border-radius: 10px;
-    font-family: 'Brush Script', cursive; /* Estilo de fuente tipo grafiti (asegurate de que la fuente esté disponible) */
+    font-family: 'Brush Script', cursive; /* Estilo de fuente tipo grafiti (asegurate de que la fuente estÃ© disponible) */
     z-index: -4;
 }
 
@@ -1705,7 +1686,7 @@ padding-bottom: 13px;
 
 
 
-/* Para pantallas pequeñas: se apilan verticalmente y se reordena */
+/* Para pantallas pequeÃ±as: se apilan verticalmente y se reordena */
 @media (max-width: 768px) {
     .groups-container {
     flex-direction: column;
@@ -1842,7 +1823,7 @@ padding-bottom: 13px;
     margin-left: 15px;  
 }
 
-/* Contenedor de la información de texto */
+/* Contenedor de la informaciÃ³n de texto */
 .profile-info {
     display: flex;
     flex-direction: column;  
@@ -2069,13 +2050,13 @@ padding-bottom: 13px;
     display: none;
 }
 
-/* Estilo de cada ítem del acordeón */
+/* Estilo de cada Ã­tem del acordeÃ³n */
 .accordion-item {
     border-bottom: 1px solid #ddd;
     padding: 1rem 0;
 }
 
-/* El label actúa como "botón" para expandir/colapsar */
+/* El label actÃºa como "botÃ³n" para expandir/colapsar */
 .accordion label {
     display: flex;
     justify-content: space-between;
@@ -2086,7 +2067,7 @@ padding-bottom: 13px;
     user-select: none;
 }
 
-/* Ícono circular con flecha */
+/* Ãcono circular con flecha */
 .faq-icon {
     display: inline-flex;
     align-items: center;
@@ -2125,12 +2106,12 @@ padding-bottom: 13px;
     color: #333;
 }
 
-/* Cuando el radio está marcado, expandimos el contenido */
+/* Cuando el radio estÃ¡ marcado, expandimos el contenido */
 input[type="radio"]:checked ~ .faq-content {
-    max-height: 200px; /* Ajusta según el tamaño del contenido */
+    max-height: 200px; /* Ajusta segÃºn el tamaÃ±o del contenido */
 }
 
-/* Rotación de la flecha cuando está abierto */
+/* RotaciÃ³n de la flecha cuando estÃ¡ abierto */
 input[type="radio"]:checked + label .faq-icon::before {
     transform: rotate(-135deg);
 }
@@ -2292,7 +2273,7 @@ textarea {
 
 /* Estilo para la lista desordenada */
 ul {
-    list-style-type: disc; /* Usa círculos como puntos */
+    list-style-type: disc; /* Usa cÃ­rculos como puntos */
     padding-left: 10px; /* Espaciado para los puntos */
 }
 
@@ -2303,7 +2284,7 @@ li {
 
 /* Cambiar color del punto */
 ul li {
-    list-style-position: inside; /* Poner el punto dentro del área del texto */
+    list-style-position: inside; /* Poner el punto dentro del Ã¡rea del texto */
 }
 
 
@@ -2403,13 +2384,13 @@ ul li {
     transition: all 0.6s ease-out;
   }
   
-  /* Estado animado: elemento visible y en su posición final */
+  /* Estado animado: elemento visible y en su posiciÃ³n final */
   [data-animation].animate {
     opacity: 1;
     transform: translateY(0%);
   }
   
-  /* Opcional: puedes definir animaciones específicas mediante keyframes si lo deseas */
+  /* Opcional: puedes definir animaciones especÃ­ficas mediante keyframes si lo deseas */
   @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -2437,10 +2418,10 @@ ul li {
     z-index: 9999;
     /* Se mantiene visible durante 4 segundos y luego se desvanece en 0.5 segundos */
     animation: fadeOut 0.5s forwards;
-    animation-delay: 1s;
+    animation-delay: 3s;
 }
 
-/* Spinner: círculo con bordes y animación de giro */
+/* Spinner: cÃ­rculo con bordes y animaciÃ³n de giro */
 .spinner {
     width: 50px;
     height: 50px;
@@ -2452,77 +2433,16 @@ ul li {
     animation: spin 1s linear infinite;
 }
 
-/* Animación del spinner */
+/* AnimaciÃ³n del spinner */
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
 
-/* Animación para desvanecer el loader */
+/* AnimaciÃ³n para desvanecer el loader */
 @keyframes fadeOut {
     from { opacity: 1; }
     to { opacity: 0; visibility: hidden; }
 }
 
-
-/* Animaciones para secciones */
-.hidden-section {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.1s ease-out;
-    }
-    
-    .visible-section {
-    opacity: 1;
-    transform: translateY(0);
-    }
-
-    /* Indicador de carga de sección */
-    .section-loader {
-    height: 3px;
-    background: #FF4444;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    transition: width 1s ease;
-    }
-
-
-
-    /* Animación de texto de carga */
-    @keyframes pulse {
-        0% { opacity: 0.3; }
-        50% { opacity: 1; }
-        100% { opacity: 0.3; }
-        }
-    
-        .section-loading-text {
-        position: fixed;
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        font-family: 'Tanker', sans-serif;
-        font-size: 1.8rem;
-        color: #FF4444;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
-        animation: pulse 5s infinite;
-        display: none;
-        background: rgba(255, 255, 255, 0.9);
-        padding: 10px 25px;
-        border-radius: 30px;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        z-index: 1000;
-        }
-
 /* ----------------------- END EXTRAS  ----------------------- */
-
-
-
-
-/* Añadir al CSS existente */
-body.scroll-lock {
-    overflow: hidden;
-    position: fixed;
-    width: 100%;
-}

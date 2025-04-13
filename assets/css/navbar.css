@@ -18,7 +18,7 @@
 
 
 
-/* Estilos para el botón de hamburguesa */
+/* Estilos para el botÃ³n de hamburguesa */
 .navbar-hamburger {
     background: rgba(207, 80, 53, 1); /* Fondo rojo */
     border: none;
@@ -30,7 +30,7 @@
     justify-content: center;
     gap: 5px; /* Espacio entre las barras */
     cursor: pointer;
-    border-radius: 12px; /* Bordes redondeados para el botón */
+    border-radius: 12px; /* Bordes redondeados para el botÃ³n */
 }
 
 /* Estilos para las barras del hamburguesa */
@@ -44,7 +44,7 @@
 
 
 
-/* Menú lateral */
+/* MenÃº lateral */
 .menu-overlay {
     position: fixed;
     top: 0;
@@ -108,7 +108,7 @@ background: rgba(21, 21, 19, 1);
     transform: rotate(180deg); 
 }
 
-/* Botón Our Location */
+/* BotÃ³n Our Location */
 .our-location {
     position: relative;
     transform: rotate(180deg); 
@@ -116,7 +116,7 @@ background: rgba(21, 21, 19, 1);
     top: 80px;
 }
 
-/* Contenido del menú */
+/* Contenido del menÃº */
 .menu-content {
     position: relative;
     padding: 80px 40px;
@@ -150,7 +150,7 @@ background: rgba(21, 21, 19, 1);
     transform: translateX(20px);
 }
 
-/* Botón cerrar con nuevos estilos */
+/* BotÃ³n cerrar con nuevos estilos */
 .menu-close.btn {
 
     background: rgba(207, 80, 53, 1); /* Fondo rojo */
@@ -163,7 +163,7 @@ background: rgba(21, 21, 19, 1);
     justify-content: center;
     gap: 5px; /* Espacio entre las barras */
     cursor: pointer;
-    border-radius: 12px; /* Bordes redondeados para el botón */
+    border-radius: 12px; /* Bordes redondeados para el botÃ³n */
 
     position: absolute;
     top: 30px;
@@ -220,7 +220,7 @@ background: rgba(21, 21, 19, 1);
     color: #CF5035;
     text-decoration: none;
     display: inline-block;
-    font-size: 36px;
+    font-size: 86px;
     position: relative;
     transition: all 0.3s ease;
     margin: -16px;
@@ -231,7 +231,7 @@ background: rgba(21, 21, 19, 1);
 /* Media query para pantallas con altura menor a 900px y ancho mayor a 1000px */
 @media (max-height: 900px) and (min-width: 1001px) {
     .sport-button {
-        font-size: 30px; /* tamaño de fuente cuando las condiciones se cumplen */
+        font-size: 46px; /* tamaÃ±o de fuente cuando las condiciones se cumplen */
         margin-bottom: -10px;
     }
 }
@@ -246,7 +246,7 @@ background: rgba(21, 21, 19, 1);
 }
 
 
-/* Rotaciones específicas */
+/* Rotaciones especÃ­ficas */
 .glimbing { transform: rotate(6.92deg); left: -70px; padding-bottom: 16px; }
 .surfskate { transform: rotate(-2.52deg); left: 60px; }
 .parkour { transform: rotate(2.53deg); left: -70px; }
@@ -269,7 +269,7 @@ background: rgba(21, 21, 19, 1);
 }
 
 .circle-button-hover {
-    background: rgba(207, 80, 53, 1); /* Fondo sólido */
+    background: rgba(207, 80, 53, 1); /* Fondo sÃ³lido */
     color: white;
     border: none; /* Sin borde */
     outline: none; /* Evita borde de enfoque */
@@ -281,7 +281,7 @@ background: rgba(21, 21, 19, 1);
     border-radius: 100%;
     position: relative;
     right: -30px;
-    top: -30px;
+    top: -20px;
     z-index: 0;
     opacity: 0;
     transform: scale(0.8);
@@ -289,45 +289,12 @@ background: rgba(21, 21, 19, 1);
 
 
 .sport-button:hover .circle-button-hover {
-    /* Al hacer hover: aparece, recupera su tamaño y se le agrega box-shadow */
+    /* Al hacer hover: aparece, recupera su tamaÃ±o y se le agrega box-shadow */
     opacity: 1;
     transform: scale(1);
     /* box-shadow: 0px -0px 3px rgba(255, 255, 255, 1); */
  
 }
-
-
-
-
-.circle-button-hover-navbar {
-    background: rgba(207, 80, 53, 1); /* Fondo sólido */
-    color: white;
-    border: none; /* Sin borde */
-    outline: none; /* Evita borde de enfoque */
-    box-shadow: none; /* Sin sombra */
-    padding: 7.5px;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    border-radius: 100%;
-    position: relative;
-    left: 10px;
-    top: -3px;
-    z-index: 0;
-    opacity: 0;
-    transform: scale(0.8);
-}
-
-
-.sport-button:hover .circle-button-hover-navbar {
-    /* Al hacer hover: aparece, recupera su tamaño y se le agrega box-shadow */
-    opacity: 1;
-    transform: scale(1);
-    /* box-shadow: 0px -0px 3px rgba(255, 255, 255, 1); */
- 
-}
-
-
 
 
 .img-climbing{
@@ -365,7 +332,7 @@ background: rgba(21, 21, 19, 1);
     }
 
     .sport-button {
-        font-size: 26px;
+        font-size: 48px;
         margin-bottom: 4px;
     }
 
@@ -422,7 +389,7 @@ background: rgba(21, 21, 19, 1);
     }
 
 
-    /* Botón Our Location */
+    /* BotÃ³n Our Location */
     .our-location {
         right:24px;
         top: 50px;
@@ -440,7 +407,7 @@ background: rgba(21, 21, 19, 1);
 /* Media query para pantallas con altura menor a 900px y ancho mayor a 1000px */
 @media (max-height: 900px) and (min-width: 1001px) {
 
-    /* Botón Our Location */
+    /* BotÃ³n Our Location */
     .our-location {
         right:30% !important;
         top: 50px;

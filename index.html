@@ -8,12 +8,36 @@
   <!--<meta name="color-scheme" content="light">-->
   <title>Lokales Training Spot</title>
   <!-- Vincula tu hoja de estilos -->
+
+ 
+
+
+
+  
   <link href="https://api.fontshare.com/v2/css?f[]=tanker@400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/custom.css?v=1.0205" />
+   <link rel="stylesheet" href="./assets/css/custom_no_anim.css?v=1.0202" />
+  <!--<link rel="stylesheet" href="./assets/css/custom.css?v=1.0205" />-->
   <link rel="stylesheet" href="./assets/css/navbar.css?v=1.0205" />
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <style>
+  
+  .img_foto_build_self_confidence2 {
+    position: absolute;
+    right: -64px;
+    top: 12px;
+    z-index: 1;
+}
+
+
+.img_skate_build_self_confidence2 {
+    position: absolute;
+    left: 332px;
+    top: -10px;
+    z-index: 1;
+}
+
+
       .switch {
   position: relative;
   display: inline-block;
@@ -237,7 +261,7 @@ input.check-toggle-round-flat:checked + label:after {
                 <button class="circle-button-hover-navbar">
                     <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="17px" viewBox="0 0 1024 1024"><path fill="currentColor" d="M754.752 480H160a32 32 0 1 0 0 64h594.752L521.344 777.344a32 32 0 0 0 45.312 45.312l288-288a32 32 0 0 0 0-45.312l-288-288a32 32 0 1 0-45.312 45.312z"/></svg>
                 </button> 
-                <span data-lang-en="Home" data-lang-es="Inicio">Home</span>
+                <span data-lang-en="Home" data-lang-es="Hogar">Home</span>
             </a>
         </div>
         <div class="button-container">
@@ -283,7 +307,7 @@ input.check-toggle-round-flat:checked + label:after {
                 <button class="circle-button-hover-navbar">
                     <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="17px" viewBox="0 0 1024 1024"><path fill="currentColor" d="M754.752 480H160a32 32 0 1 0 0 64h594.752L521.344 777.344a32 32 0 0 0 45.312 45.312l288-288a32 32 0 0 0 0-45.312l-288-288a32 32 0 1 0-45.312 45.312z"/></svg>
                 </button> 
-                <span data-lang-en="Who we are" data-lang-es="Quienes somos">Founder</span>
+                <span data-lang-en="Founder" data-lang-es="Fundador">Founder</span>
             </a>
         </div>
 
@@ -338,9 +362,9 @@ input.check-toggle-round-flat:checked + label:after {
         
                         <h1 data-lang-en="SPORT & FUN AT LOKALES" data-lang-es="DEPORTE & DIVERSIÓN EN LOKALES">SPORT & FUN AT LOKALES</h1>
                         <!--<button id="dark-mode-toggle">Toggle Dark Mode</button>-->
-                        <!--<p class="pt-13 pb-17" data-lang-en="At Lokales, we believe in giving children the space to explore and discover at their own pace. They're supervised with care, but without feeling it, allowing them to experience freedom, build confidence, and form meaningful friendships." data-lang-es="En Lokales, creemos en darles a los niños el espacio para explorar y descubrir a su propio ritmo. Están supervisados con cuidado, pero sin que lo sientan, lo que les permite experimentar la libertad, construir confianza y formar amistades significativas.">
+                        <p class="pt-13 pb-17" data-lang-en="At Lokales, we believe in giving children the space to explore and discover at their own pace. They're supervised with care, but without feeling it, allowing them to experience freedom, build confidence, and form meaningful friendships." data-lang-es="En Lokales, creemos en darles a los niños el espacio para explorar y descubrir a su propio ritmo. Están supervisados con cuidado, pero sin que lo sientan, lo que les permite experimentar la libertad, construir confianza y formar amistades significativas.">
                             At Lokales, we believe in giving children the space to explore and discover at their own pace. They're supervised with care, but without feeling it, allowing them to experience freedom, build confidence, and form meaningful friendships.
-                        </p>-->
+                        </p>
                        
                        
                        
@@ -468,165 +492,236 @@ input.check-toggle-round-flat:checked + label:after {
 
 
         
-   <!-- -------- SECCION BENEFICIOS -------- -->
-<section class="container ver-beneficios hidden-section" id="seccion_beneficios" data-section-number="1">
+  <!-- -------- SECCION BENEFICIOS -------- -->
+<section class="container ver-beneficios">   
     <div class="contenedor-beneficios">
-        <div class="beneficios-fondo"></div>
-        <!-- Capa para el blur -->
-        <div class="beneficios-contenido">
-            <!-- Contenido que no se distorsiona -->
+        <div class="beneficios-fondo"></div> <!-- Capa para el blur -->
+        <div class="beneficios-contenido">  <!-- Contenido que no se distorsiona -->
 
-            <!-- BuildSelf-Confidence -->
-            <div class="filas filas-beneficios">
+            <!-- Build Self-Confidence -->
+            <div class="filas filas-beneficios">  
                 <div class="contenedor-beneficio-title">
                     <div class="contenedor_fotos_mobile_beneficios">
-                        <img src="./assets/images/beneficios/foto_build_self_confidence.png" alt="Build Self-Confidence">
-                        <img src="./assets/images/navbar/skate.png" alt="Skate">
+                        <img src="./assets/images/beneficios/foto_build_self_confidence.png">
+                        <img src="./assets/images/navbar/skate.png">
                     </div>
-                    <h3 class="h3-title" data-lang-en="Build Self-Confidence" data-lang-es="Construye Autoconfianza">
-                        Build<br>
-                        Self-Confidence
+
+                    <h3 class="h3-title">
+                        <span data-lang-en="Build" data-lang-es="Construir">Build</span><br>
+                        <span data-lang-en="Self-Confidence" data-lang-es="Autoestima">Self-Confidence</span>
                     </h3>
-                    <img src="./assets/images/beneficios/foto_build_self_confidence.png" class="img_foto_build_self_confidence" alt="Build Self-Confidence">
-                    <img src="./assets/images/navbar/skate.png" class="img_skate_build_self_confidence" alt="Skate">
+
+                    <img src="./assets/images/beneficios/foto_build_self_confidence.png" class="img_foto_build_self_confidence img_foto_build_self_confidence-img">
+                    <img src="./assets/images/navbar/skate.png" class="img_skate_build_self_confidence img_skate_build_self_confidence-img">
                 </div>
+
                 <div class="contenedor-beneficio-p">
-                    <p data-lang-en="Our approach allows children to feel in control. We supervise carefully but without interference, giving them the chance to experience independence, build self-confidence, and create friendships in a natural environment." data-lang-es="Nuestro enfoque permite que los niños se sientan en control. Supervisamos cuidadosamente pero sin interferencias, dándoles la oportunidad de experimentar la independencia, construir la autoconfianza y crear amistades en un entorno natural.">
+                    <p data-lang-en="Our approach allows children to feel in control. We supervise carefully but without interference, giving them the chance to experience independence, build self-confidence, and create friendships in a natural environment." 
+                       data-lang-es="Nuestro enfoque permite que los niños se sientan en control. Supervisamos cuidadosamente pero sin interferir, brindándoles la oportunidad de experimentar independencia, construir autoestima y formar amistades en un entorno natural.">
                         Our approach allows children to feel in control. We supervise carefully but without interference, giving them the chance to experience independence, build self-confidence, and create friendships in a natural environment.
                     </p>
                 </div>
             </div>
 
             <!-- Safe Environment -->
-            <div class="filas filas-beneficios mt-64 mb-64">
+            <div class="filas filas-beneficios mt-64 mb-64">  
                 <div class="contenedor-beneficio-p">
-                    <p data-lang-en="We provide a safe environment where children can move freely, unaware that they’re being watched. This way, they grow in independence, trust their abilities, and build connections naturally." data-lang-es="Proporcionamos un entorno seguro donde los niños pueden moverse libremente, sin darse cuenta de que están siendo observados. De esta manera, crecen en independencia, confían en sus habilidades y construyen conexiones de forma natural.">
+                    <p data-lang-en="We provide a safe environment where children can move freely, unaware that they’re being watched. This way, they grow in independence, trust their abilities, and build connections naturally."
+                       data-lang-es="Proporcionamos un entorno seguro donde los niños pueden moverse libremente, sin saber que están siendo observados. Así, crecen en independencia, confían en sus habilidades y construyen conexiones de forma natural.">
                         We provide a safe environment where children can move freely, unaware that they’re being watched. This way, they grow in independence, trust their abilities, and build connections naturally.
                     </p>
                 </div>
+
                 <div class="contenedor-beneficio-title">
                     <div class="contenedor_fotos_mobile_beneficios">
-                        <img src="./assets/images/beneficios/foto_safe_enviroment.png" alt="Safe Environment">
-                        <img src="./assets/images/navbar/climbing.png" alt="Climbing">
+                        <img src="./assets/images/beneficios/foto_safe_enviroment.png">
+                        <img src="./assets/images/navbar/climbing.png">
                     </div>
-                    <h3 class="h3-title" data-lang-en="Safe Environment" data-lang-es="Ambiente Seguro">
-                        Safe<br>
-                        Environment
+
+                    <h3 class="h3-title">
+                        <span data-lang-en="Safe" data-lang-es="Entorno">Safe</span><br>
+                        <span data-lang-en="Environment" data-lang-es="Seguro">Environment</span>
                     </h3>
-                    <img src="./assets/images/beneficios/foto_safe_enviroment.png" class="img_foto_safe_enviroment" alt="Safe Environment">
-                    <img src="./assets/images/navbar/climbing.png" class="img_climbing_safe_enviroment" alt="Climbing">
+
+                    <img src="./assets/images/beneficios/foto_safe_enviroment.png" class="img_foto_safe_enviroment">
+                    <img src="./assets/images/navbar/climbing.png" class="img_climbing_safe_enviroment">
                 </div>
             </div>
 
             <!-- Explore & Discover -->
-            <div class="filas filas-beneficios">
+            <div class="filas filas-beneficios">  
                 <div class="contenedor-beneficio-title">
                     <div class="contenedor_fotos_mobile_beneficios">
-                        <img src="./assets/images/beneficios/foto_safe_enviroment.png" alt="Explore & Discover">
+                        <img src="./assets/images/beneficios/foto_safe_enviroment.png">
                     </div>
-                    <h3 class="h3-title" data-lang-en="Explore & Discover" data-lang-es="Explora y Descubre">
-                        Explore &<br>
-                        Discover
+
+                    <h3 class="h3-title">
+                        <span data-lang-en="Explore &" data-lang-es="Explorar y">Explore &</span><br>
+                        <span data-lang-en="Discover" data-lang-es="Descubrir">Discover</span>
                     </h3>
-                    <img src="./assets/images/beneficios/foto_explore_discover.png" class="img_foto_explore_discover" alt="Explore & Discover">
+
+                    <img src="./assets/images/beneficios/foto_explore_discover.png" class="img_foto_explore_discover">
                 </div>
+
                 <div class="contenedor-beneficio-p">
-                    <p data-lang-en="At Lokales, we believe in giving children the space to explore and discover at their own pace. They're supervised with care, but without feeling it, allowing them to experience freedom, build confidence, and form meaningful friendships." data-lang-es="En Lokales, creemos en darles a los niños el espacio para explorar y descubrir a su propio ritmo. Están supervisados con cuidado, pero sin que lo sientan, lo que les permite experimentar la libertad, construir confianza y formar amistades significativas.">
+                    <p data-lang-en="At Lokales, we believe in giving children the space to explore and discover at their own pace. They're supervised with care, but without feeling it, allowing them to experience freedom, build confidence, and form meaningful friendships." 
+                       data-lang-es="En Lokales, creemos en dar a los niños el espacio para explorar y descubrir a su propio ritmo. Están supervisados con cuidado, pero sin sentirlo, lo que les permite experimentar libertad, ganar confianza y formar amistades significativas.">
                         At Lokales, we believe in giving children the space to explore and discover at their own pace. They're supervised with care, but without feeling it, allowing them to experience freedom, build confidence, and form meaningful friendships.
                     </p>
                 </div>
             </div>
+
         </div>
     </div>
 </section>
-<!-- -------- END SECCION BENEFICIOS -------- -->
+
+    <!--  -------- END SECCION BENEFICIOS -------- -->
+
+
+
+   
+   
+     <!-- -------- SECCION ATAJOS -------- -->
+    <section class="container atajos-anim-observer" style="margin-bottom: 100px;">   
+        <div class="contenedor-atajos">
+            <div class="">  <!-- Contenido que no se distorsiona -->
+         
+                <!-- BuildSelf-Confidence -->
+                <div class="filas">  
+                    <div class="contenedor-left-atajos"  >
+                    </div>
+
+                    <div class="contenedor-left-fotos-atajos">
+
+                        <!-- FOTOS COSTADO IZQUIERDO -->
+                        <img src="./assets/images/atajos/foto_1.webp" class="foto_1_atajos" >
+                        <img src="./assets/images/atajos/foto_2.webp" class="foto_2_atajos" >
+                        <img src="./assets/images/atajos/foto_3.webp" class="foto_3_atajos" >
+                        <img src="./assets/images/atajos/foto_4.webp" class="foto_4_atajos" >
+
+                        <!-- Shapes -->
+                        <img src="./assets/images/atajos/shape_1.png" class="shape_1_atajos" >
+                        <img src="./assets/images/atajos/shape_2.png" class="shape_2_atajos" >
+                        <img src="./assets/images/atajos/shape_3.png" class="shape_3_atajos" >
+                        <img src="./assets/images/atajos/shape_4.png" class="shape_4_atajos" >
+
+                        <img src="./assets/images/atajos/shape_abtract_atajo.webp" class="shape_abstract" >
+
+                    </div>
+
+
+                    
+                    <div class="contenedor-fotos-atajos-mobile">
+
+                        <!-- FOTOS COSTADO IZQUIERDO -->
+                        <img src="./assets/images/atajos/foto_1.webp" class="foto_1_atajos_mobile foto-mobile-atajo" >
+                        <img src="./assets/images/atajos/foto_2.webp" class="foto_2_atajos_mobile foto-mobile-atajo" >
+                        <img src="./assets/images/atajos/foto_3.webp" class="foto_3_atajos_mobile foto-mobile-atajo" >
+                        <img src="./assets/images/atajos/foto_4.webp" class="foto_4_atajos_mobile foto-mobile-atajo" >
+
+                        <img src="./assets/images/atajos/shape_1.png" class="shape_1_atajos_mobile" >
+                        <img src="./assets/images/atajos/shape_3.png" class="shape_3_atajos_mobile" >
+
+
+                    </div>
 
 
 
 
+                    <div class="contenedor-right-atajos">
 
-    <!-- -------- SECCION ATAJOS -------- -->
-   <!-- -------- SECCION ATAJOS -------- -->
-<section class="container atajos-anim-observer hidden-section" style="margin-bottom: 100px;" id="seccion_actividades" data-section-number="2">
-    <div class="contenedor-atajos">
-        <div class="">
-            <!-- Contenido que no se distorsiona -->
+                        <!-- Chico sentado en patineta -->
+                        <img src="./assets/images/atajos/chico_patineta.webp" class="atajo_chico_sentado_patineta" >
+                        
 
-            <!-- BuildSelf-Confidence -->
-            <div class="filas">
-                <div class="contenedor-left-atajos">
-                </div>
-
-                <div class="contenedor-left-fotos-atajos">
-                    <!-- FOTOS COSTADO IZQUIERDO -->
-                    <img src="./assets/images/atajos/foto_1.webp" class="foto_1_atajos" alt="Activities 1">
-                    <img src="./assets/images/atajos/foto_2.webp" class="foto_2_atajos" alt="Activities 2">
-                    <img src="./assets/images/atajos/foto_3.webp" class="foto_3_atajos" alt="Activities 3">
-                    <img src="./assets/images/atajos/foto_4.webp" class="foto_4_atajos" alt="Activities 4">
-
-                    <!-- Shapes -->
-                    <img src="./assets/images/atajos/shape_1.png" class="shape_1_atajos" alt="Shape 1">
-                    <img src="./assets/images/atajos/shape_2.png" class="shape_2_atajos" alt="Shape 2">
-                    <img src="./assets/images/atajos/shape_3.png" class="shape_3_atajos" alt="Shape 3">
-                    <img src="./assets/images/atajos/shape_4.png" class="shape_4_atajos" alt="Shape 4">
-
-                    <img src="./assets/images/atajos/shape_abtract_atajo.webp" class="shape_abstract" alt="Abstract Shape">
-                </div>
-
-                <div class="contenedor-fotos-atajos-mobile">
-                    <!-- FOTOS COSTADO IZQUIERDO -->
-                    <img src="./assets/images/atajos/foto_1.webp" class="foto_1_atajos_mobile foto-mobile-atajo" alt="Activities Mobile 1">
-                    <img src="./assets/images/atajos/foto_2.webp" class="foto_2_atajos_mobile foto-mobile-atajo" alt="Activities Mobile 2">
-                    <img src="./assets/images/atajos/foto_3.webp" class="foto_3_atajos_mobile foto-mobile-atajo" alt="Activities Mobile 3">
-                    <img src="./assets/images/atajos/foto_4.webp" class="foto_4_atajos_mobile foto-mobile-atajo" alt="Activities Mobile 4">
-
-                    <img src="./assets/images/atajos/shape_1.png" class="shape_1_atajos_mobile" alt="Shape Mobile 1">
-                    <img src="./assets/images/atajos/shape_3.png" class="shape_3_atajos_mobile" alt="Shape Mobile 3">
-                </div>
-                <div class="contenedor-right-atajos">
-                    <!-- Chico sentado en patineta -->
-                    <img src="./assets/images/atajos/chico_patineta.webp" class="atajo_chico_sentado_patineta" alt="Skateboard Kid">
-
-                    <!-- BOTONES ATAJOS -->
-                    <div class="menu-botones atajos-menu-botones">
+                        <!-- BOTONES ATAJOS -->
+                        <div class="menu-botones atajos-menu-botones">
                         <div class="button-container">
-                            <a href="https://www.lokales.com.ar/app_reserva.php?act_seleccionada=10" target="_blank" class="sport-button button-atajo glimbing" style="--original-rotation: -4deg">
+                            <a href="https://www.lokales.com.ar/app_reserva.php?act_seleccionada=10" target="_blank" class="sport-button button-atajo glimbing" style="--original-rotation: -6.92deg">
                                 <button class="circle-button-hover">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="27px" height="27px" viewBox="0 0 1024 1024"><path fill="currentColor" d="M754.752 480H160a32 32 0 1 0 0 64h594.752L521.344 777.344a32 32 0 0 0 45.312 45.312l288-288a32 32 0 0 0 0-45.312l-288-288a32 32 0 1 0-45.312 45.312z"/></svg>
-                                </button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="27px" height="27px" viewBox="0 0 1024 1024">
+                                        <path fill="currentColor" d="M754.752 480H160a32 32 0 1 0 0 64h594.752L521.344 777.344a32 32 0 0 0 45.312 45.312l288-288a32 32 0 0 0 0-45.312l-288-288a32 32 0 1 0-45.312 45.312z"/>
+                                    </svg>
+                                </button> 
                                 <span data-lang-en="Climbing" data-lang-es="Escalada">Climbing</span>
                             </a>
+                            <img src="./assets/images/navbar/climbing.png" class="img-climbing">
                         </div>
                         <div class="button-container">
-                            <a href="https://www.lokales.com.ar/app_reserva.php?act_seleccionada=11" target="_blank" class="sport-button button-atajo surfskate" style="--original-rotation: 13deg">
+                            <a href="https://www.lokales.com.ar/app_reserva.php?act_seleccionada=10" target="_blank" class="sport-button button-atajo surfskate" style="--original-rotation: 2.52deg">
                                 <button class="circle-button-hover">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="27px" height="27px" viewBox="0 0 1024 1024"><path fill="currentColor" d="M754.752 480H160a32 32 0 1 0 0 64h594.752L521.344 777.344a32 32 0 0 0 45.312 45.312l288-288a32 32 0 0 0 0-45.312l-288-288a32 32 0 1 0-45.312 45.312z"/></svg>
-                                </button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="27px" height="27px" viewBox="0 0 1024 1024">
+                                        <path fill="currentColor" d="M754.752 480H160a32 32 0 1 0 0 64h594.752L521.344 777.344a32 32 0 0 0 45.312 45.312l288-288a32 32 0 0 0 0-45.312l-288-288a32 32 0 1 0-45.312 45.312z"/>
+                                    </svg>
+                                </button> 
                                 <span data-lang-en="Surfskate" data-lang-es="Surfskate">Surfskate</span>
                             </a>
+                            <img src="./assets/images/navbar/skate.png" class="img-skate">
                         </div>
                         <div class="button-container">
-                            <a href="https://www.lokales.com.ar/app_reserva.php?act_seleccionada=12" target="_blank" class="sport-button button-atajo parkour" style="--original-rotation: 4deg">
+                            <a href="https://www.lokales.com.ar/app_reserva.php?act_seleccionada=10" target="_blank" class="sport-button button-atajo parkour" style="--original-rotation: -2.53deg">
                                 <button class="circle-button-hover">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="27px" height="27px" viewBox="0 0 1024 1024"><path fill="currentColor" d="M754.752 480H160a32 32 0 1 0 0 64h594.752L521.344 777.344a32 32 0 0 0 45.312 45.312l288-288a32 32 0 0 0 0-45.312l-288-288a32 32 0 1 0-45.312 45.312z"/></svg>
-                                </button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="27px" height="27px" viewBox="0 0 1024 1024">
+                                        <path fill="currentColor" d="M754.752 480H160a32 32 0 1 0 0 64h594.752L521.344 777.344a32 32 0 0 0 45.312 45.312l288-288a32 32 0 0 0 0-45.312l-288-288a32 32 0 1 0-45.312 45.312z"/>
+                                    </svg>
+                                </button> 
                                 <span data-lang-en="Parkour" data-lang-es="Parkour">Parkour</span>
+                            </a>
+                            <img src="./assets/images/navbar/calistenia.png" class="img-calistenia">
+                        </div>
+                        <div class="button-container">
+                            <a href="https://www.lokales.com.ar/app_reserva.php?act_seleccionada=10" target="_blank" class="sport-button button-atajo calistenia" style="--original-rotation: -4deg">
+                                <button class="circle-button-hover">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="27px" height="27px" viewBox="0 0 1024 1024">
+                                        <path fill="currentColor" d="M754.752 480H160a32 32 0 1 0 0 64h594.752L521.344 777.344a32 32 0 0 0 45.312 45.312l288-288a32 32 0 0 0 0-45.312l-288-288a32 32 0 1 0-45.312 45.312z"/>
+                                    </svg>
+                                </button> 
+                                <span data-lang-en="Calisthenics" data-lang-es="Calistenia">Calisthenics</span>
                             </a>
                         </div>
                         <div class="button-container">
-                            <a href="https://www.lokales.com.ar/app_reserva.php?act_seleccionada=13" target="_blank" class="sport-button button-atajo dance" style="--original-rotation: -7deg">
+                            <a href="https://www.lokales.com.ar/app_reserva.php?act_seleccionada=10" target="_blank" class="sport-button button-atajo gym">
                                 <button class="circle-button-hover">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="27px" height="27px" viewBox="0 0 1024 1024"><path fill="currentColor" d="M754.752 480H160a32 32 0 1 0 0 64h594.752L521.344 777.344a32 32 0 0 0 45.312 45.312l288-288a32 32 0 0 0 0-45.312l-288-288a32 32 0 1 0-45.312 45.312z"/></svg>
-                                </button>
-                                <span data-lang-en="Dance" data-lang-es="Baile">Dance</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="27px" height="27px" viewBox="0 0 1024 1024">
+                                        <path fill="currentColor" d="M754.752 480H160a32 32 0 1 0 0 64h594.752L521.344 777.344a32 32 0 0 0 45.312 45.312l288-288a32 32 0 0 0 0-45.312l-288-288a32 32 0 1 0-45.312 45.312z"/>
+                                    </svg>
+                                </button> 
+                                <span data-lang-en="Gym" data-lang-es="Gimnasio">Gym</span>
                             </a>
                         </div>
                     </div>
+
+                        <!-- END BOTONES ATAJOS -->
+
+                         <!-- Text Section -->
+                        <div class="mt-64 atajo-p">
+                            <p data-lang-en="
+                                At Lokales, we believe that sports like skateboarding, parkour, climbing, and calisthenics are more than just physical activities—they're powerful tools for personal development. These sports challenge both the mind and body, helping young people build essential life skills such as resilience, discipline, creativity, and problem-solving."
+                               data-lang-es="
+                                En Lokales, creemos que deportes como el skateboarding, el parkour, la escalada y la calistenia son más que actividades físicas: son herramientas poderosas para el desarrollo personal. Estos deportes desafían tanto la mente como el cuerpo, ayudando a los jóvenes a desarrollar habilidades esenciales para la vida como la resiliencia, la disciplina, la creatividad y la resolución de problemas.">
+                                At Lokales, we believe that sports like skateboarding, parkour, climbing, and calisthenics are more than just physical activities—they're powerful tools for personal development.
+                            </p>
+                        </div>
+
+
+                        <!-- Papel vertical -->
+                        <img src="./assets/images/atajos/Paper_vertical.webp" class="atajo_papel_vertical" >
+                        <img src="./assets/images/atajos/paper_cuadriculado_horizontal.webp" class="atajo_papel_vertical_mobile" >
+
+                        <!-- Papel fondo -->
+                        <img src="./assets/images/atajos/Ripped Paper.webp" class="atajo_papel_horizontal"  >
+                        <img src="./assets/images/atajos/shape_abtract_atajo.webp" class="shape_abstract shape_abstract_mobile" >
+
+
+                    </div>
                 </div>
+
+
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+
 <!-- -------- END SECCION ATAJOS -------- -->
 
 
@@ -645,20 +740,21 @@ input.check-toggle-round-flat:checked + label:after {
                 <div class="letter" style="top: -5px;" data-lang-en="C" data-lang-es="C">C</div>
                 <div class="letter" style="top: 5px;" data-lang-en="I" data-lang-es="I">I</div>
                 <div class="letter" style="top: -5px;" data-lang-en="N" data-lang-es="O">N</div>
-                <div class="letter" style="top: -5px;" data-lang-en="G" data-lang-es="S">G</div>
             </div>
 
         
-            <!--<p class="text-white p-pricing" data-lang-en="Our job opportunities at Lokales allow you to share that passion with a like-minded employee culture and work where you play. 
-                <br><br>
-                Be part of our movement to transform generations of active enthusiasts. You’ll improve your own skills, learn something new, plus make plenty of memories and lasting friendships along the way. If you are interested in sharing this adventure with us, we encourage you to check out our current job offers and apply today" data-lang-es="Nuestras oportunidades de trabajo en Lokales te permiten compartir esa pasión con una cultura de empleados con ideas afines y trabajar donde juegas. 
-                <br><br>
-                Sé parte de nuestro movimiento para transformar generaciones de entusiastas activos. Mejorarás tus propias habilidades, aprenderás algo nuevo, además de crear muchos recuerdos y amistades duraderas en el camino. Si estás interesado en compartir esta aventura con nosotros, te animamos a que consultes nuestras ofertas de trabajo actuales y presentes tu solicitud hoy mismo.">
-                Our job opportunities at Lokales allow you to share that passion with a like-minded employee culture and work where you play. 
-                <br><br>
-                Be part of our movement to transform generations of active enthusiasts. You’ll improve your own skills, learn something new, plus make plenty of memories and lasting friendships along the way. If you are interested in sharing this adventure with us, we encourage you to check out our current job offers and apply today
-            </p>-->
-        
+           <p class="text-white p-pricing" 
+                   data-lang-en="Our job opportunities at Lokales allow you to share that passion with a like-minded employee culture and work where you play. 
+                                &lt;br&gt;&lt;br&gt;
+                                Be part of our movement to transform generations of active enthusiasts. You’ll improve your own skills, learn something new, plus make plenty of memories and lasting friendships along the way. If you are interested in sharing this adventure with us, we encourage you to check out our current job offers and apply today" 
+                   data-lang-es="Nuestras oportunidades de trabajo en Lokales te permiten compartir esa pasión con una cultura de empleados con ideas afines y trabajar donde juegas. 
+                                &lt;br&gt;&lt;br&gt;
+                                Sé parte de nuestro movimiento para transformar generaciones de entusiastas activos. Mejorarás tus propias habilidades, aprenderás algo nuevo, además de crear muchos recuerdos y amistades duraderas en el camino. Si estás interesado en compartir esta aventura con nosotros, te animamos a que consultes nuestras ofertas de trabajo actuales y presentes tu solicitud hoy mismo.">
+                   Our job opportunities at Lokales allow you to share that passion with a like-minded employee culture and work where you play. 
+                   &lt;br&gt;&lt;br&gt;
+                   Be part of our movement to transform generations of active enthusiasts. You’ll improve your own skills, learn something new, plus make plenty of memories and lasting friendships along the way. If you are interested in sharing this adventure with us, we encourage you to check out our current job offers and apply today
+                </p>
+
         </div>
 
 
@@ -1542,11 +1638,18 @@ document.addEventListener('keydown', function (e) {
 
 <script>
 $(document).ready(function () {
+    
+    $('.img_foto_build_self_confidence-img').removeClass('img_foto_build_self_confidence');
+    $('.img_skate_build_self_confidence-img').removeClass('img_skate_build_self_confidence');
+    
+    $('.img_foto_build_self_confidence-img').addClass('img_foto_build_self_confidence2');
+    $('.img_skate_build_self_confidence-img').addClass('img_skate_build_self_confidence2');
+    
    // Function to switch language
     const switchLanguage = (isSpanish) => {
         $('[data-lang-en]').each(function () {
             const text = isSpanish ? $(this).attr('data-lang-es') : $(this).attr('data-lang-en');
-            $(this).text(text);
+            $(this).html(text);
         });
 
         // Update button text
@@ -1555,7 +1658,7 @@ $(document).ready(function () {
             const esText = $(this).find('span').data('lang-es');
 
             if (enText && esText) {
-                $(this).find('span').text(isSpanish ? esText : enText);
+                $(this).find('span').html(isSpanish ? esText : enText);
             }
         });
     };
@@ -1576,6 +1679,27 @@ $(document).ready(function () {
             $('.estext').hide();
             $('.entext').show();
         }
+        
+        
+         // ✅ Image class toggle based on language
+        if (isSpanish) {
+            
+            $('.img_foto_build_self_confidence-img').removeClass('img_foto_build_self_confidence');
+            $('.img_skate_build_self_confidence-img').removeClass('img_skate_build_self_confidence');
+            
+            $('.img_foto_build_self_confidence-img').addClass('img_foto_build_self_confidence2');
+            $('.img_skate_build_self_confidence-img').addClass('img_skate_build_self_confidence2');
+            
+             
+        } else {
+            
+            $('.img_foto_build_self_confidence-img').addClass('img_foto_build_self_confidence');
+            $('.img_skate_build_self_confidence-img').addClass('img_skate_build_self_confidence');
+            
+            $('.img_foto_build_self_confidence-img').removeClass('img_foto_build_self_confidence2');
+            $('.img_skate_build_self_confidence-img').removeClass('img_skate_build_self_confidence2');
+        }
+        
         switchLanguage(isSpanish);
     });
 });
